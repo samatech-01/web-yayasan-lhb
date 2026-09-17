@@ -215,20 +215,12 @@ img {
 }
 
 
-.nav-menu a {
-
-  position: relative;
-
-  padding: 8px 0;
-
+.nav-menu a,
+.nav-menu .dropdown-toggle {
   font-size: 14px;
-
   font-weight: 600;
-
-  transition: color .25s ease;
-
+  color: var(--tosca-dark);
 }
-
 
 .nav-menu a:hover {
 
@@ -700,4 +692,124 @@ img {
     transform: translateY(-7px) rotate(-45deg);
   }
 
+}
+/* =========================
+   PROGRAM DROPDOWN
+========================= */
+
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-toggle span {
+  font-size: 11px;
+  transition: transform 0.25s ease;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-5px);
+
+  min-width: 210px;
+  padding: 8px;
+
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: 0.25s ease;
+  z-index: 100;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 11px 14px;
+  border-radius: 9px;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background: var(--cream);
+  color: var(--deep);
+}
+
+/* Saat dropdown aktif */
+.nav-dropdown.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.nav-dropdown.active .dropdown-toggle span {
+  transform: rotate(180deg);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .dropdown-menu {
+    position: static;
+    transform: none;
+
+    min-width: 100%;
+    margin-top: 4px;
+    padding: 4px 0 4px 14px;
+
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-dropdown.active .dropdown-menu {
+    display: block;
+    transform: none;
+  }
+
+  .dropdown-menu a {
+    padding: 9px 12px;
+  }
 }
