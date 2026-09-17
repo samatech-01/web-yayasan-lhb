@@ -371,10 +371,11 @@
   </div>
 
 </footer>
-  <script>
+<script>
   const menuToggle = document.getElementById("menuToggle");
   const navMenu = document.getElementById("navMenu");
 
+  // Hamburger
   menuToggle.addEventListener("click", function () {
     menuToggle.classList.toggle("active");
     navMenu.classList.toggle("active");
@@ -383,6 +384,7 @@
     menuToggle.setAttribute("aria-expanded", isOpen);
   });
 
+  // Tutup hamburger setelah memilih menu
   navMenu.querySelectorAll("a").forEach(function (link) {
     link.addEventListener("click", function () {
       menuToggle.classList.remove("active");
@@ -390,17 +392,21 @@
       menuToggle.setAttribute("aria-expanded", "false");
     });
   });
-    <div class="nav-dropdown">
-  <button class="dropdown-toggle" type="button">
-    Program <span>▾</span>
-  </button>
 
-  <div class="dropdown-menu">
-    <a href="./sdit.html">SDIT Anak Muslim</a>
-    <a href="./masjid.html">Masjid</a>
-    <a href="./tahfidz.html">Tahfidz</a>
-  </div>
-</div>
+  // Dropdown Program
+  const programDropdown = document.querySelector(".nav-dropdown");
+  const programToggle = document.querySelector(".dropdown-toggle");
+
+  programToggle.addEventListener("click", function (e) {
+    e.stopPropagation();
+    programDropdown.classList.toggle("active");
+  });
+
+  // Tutup dropdown saat klik area lain
+  document.addEventListener("click", function () {
+    programDropdown.classList.remove("active");
+  });
+</script>
 </script>
 
 
