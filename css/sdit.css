@@ -1471,25 +1471,21 @@
   padding: 0;
 }
 
-/* ICON PENERAPAN QURMA */
+}
+
+/* =========================
+   ICON PENERAPAN QURMA
+========================= */
 
 .example-icon {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   margin-bottom: 16px;
 }
 
-.example-icon svg {
-  width: 42px !important;
-  height: 42px !important;
-
+.example-icon img {
   display: block;
-
-  fill: none !important;
-  stroke: var(--gold) !important;
-  stroke-width: 1.7 !important;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
