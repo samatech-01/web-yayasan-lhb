@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+
+  <!-- atap -->
+  <path d="M10 29L32 13L54 29"
+        stroke="#e2c875"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- gedung -->
+  <path d="M15 27V52H49V27"
+        stroke="#ffffff"
+        stroke-width="4"
+        stroke-linejoin="round"/>
+
+  <!-- pintu -->
+  <path d="M27 52V38H37V52"
+        stroke="#e2c875"
+        stroke-width="4"
+        stroke-linejoin="round"/>
+
+  <!-- jendela -->
+  <path d="M20 34H24M40 34H44"
+        stroke="#ffffff"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+  <!-- tanah -->
+  <path d="M10 53H54"
+        stroke="#e2c875"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+</svg>

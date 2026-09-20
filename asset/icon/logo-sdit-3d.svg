@@ -1,0 +1,305 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 512 512"
+  role="img"
+  aria-labelledby="title"
+>
+  <title id="title">Logo SD IT Anak Muslim</title>
+
+  <defs>
+
+    <!-- GRADIENT TOSCA -->
+    <linearGradient id="tosca3d" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16a89a"/>
+      <stop offset="38%" stop-color="#087f73"/>
+      <stop offset="72%" stop-color="#045e56"/>
+      <stop offset="100%" stop-color="#033e39"/>
+    </linearGradient>
+
+    <!-- GRADIENT GOLD -->
+    <linearGradient id="gold3d" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4df8a"/>
+      <stop offset="30%" stop-color="#e2c875"/>
+      <stop offset="62%" stop-color="#c89b28"/>
+      <stop offset="100%" stop-color="#8f6815"/>
+    </linearGradient>
+
+    <!-- HIGHLIGHT GOLD -->
+    <linearGradient id="goldHighlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff1ad"/>
+      <stop offset="100%" stop-color="#c89b28"/>
+    </linearGradient>
+
+    <!-- SHADOW -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow
+        dx="0"
+        dy="10"
+        stdDeviation="8"
+        flood-color="#012d29"
+        flood-opacity=".32"
+      />
+    </filter>
+
+  </defs>
+
+
+  <!-- =========================
+       BULAN SABIT
+  ========================== -->
+
+  <path
+    d="M256 28
+       C236 28 221 43 221 62
+       C221 82 237 97 257 97
+       C275 97 290 84 293 67
+       C284 75 274 79 264 79
+       C247 79 235 67 235 52
+       C235 42 243 33 256 28Z"
+    fill="url(#goldHighlight)"
+    stroke="#9c731c"
+    stroke-width="5"
+    filter="url(#shadow)"
+  />
+
+
+  <!-- =========================
+       KUBAH / MIHRAB
+  ========================== -->
+
+  <path
+    d="
+      M256 87
+
+      C223 126
+       183 143
+       153 181
+
+      C125 217
+       114 258
+       114 306
+
+      L114 328
+
+      L151 348
+
+      L151 302
+
+      C151 258
+       163 226
+       188 197
+
+      C207 175
+       230 158
+       256 132
+
+      C282 158
+       305 175
+       324 197
+
+      C349 226
+       361 258
+       361 302
+
+      L361 348
+
+      L398 328
+
+      L398 306
+
+      C398 258
+       387 217
+       359 181
+
+      C329 143
+       289 126
+       256 87
+      Z
+    "
+    fill="url(#tosca3d)"
+    stroke="#033e39"
+    stroke-width="7"
+    stroke-linejoin="round"
+    filter="url(#shadow)"
+  />
+
+  <!-- HIGHLIGHT KUBAH -->
+
+  <path
+    d="
+      M256 104
+      C225 139 192 157 167 187
+      C143 216 132 250 131 286
+    "
+    fill="none"
+    stroke="#54d5c8"
+    stroke-width="6"
+    stroke-linecap="round"
+    opacity=".7"
+  />
+
+
+  <!-- =========================
+       KEPALA
+  ========================== -->
+
+  <circle
+    cx="256"
+    cy="238"
+    r="35"
+    fill="url(#tosca3d)"
+    stroke="#033e39"
+    stroke-width="6"
+    filter="url(#shadow)"
+  />
+
+  <ellipse
+    cx="245"
+    cy="226"
+    rx="12"
+    ry="9"
+    fill="#55d4c8"
+    opacity=".45"
+  />
+
+
+  <!-- =========================
+       FIGUR / DAUN
+  ========================== -->
+
+  <path
+    d="
+      M256 337
+
+      C239 302
+       210 282
+       178 278
+
+      C185 314
+       209 345
+       256 382
+
+      C303 345
+       327 314
+       334 278
+
+      C302 282
+       273 302
+       256 337
+      Z
+    "
+    fill="url(#tosca3d)"
+    stroke="#033e39"
+    stroke-width="6"
+    stroke-linejoin="round"
+    filter="url(#shadow)"
+  />
+
+
+  <!-- =========================
+       BUKU LAPIS ATAS
+  ========================== -->
+
+  <path
+    d="
+      M256 420
+
+      C214 374
+       163 351
+       94 345
+
+      L116 382
+
+      C169 387
+       211 403
+       256 445
+      Z
+    "
+    fill="url(#gold3d)"
+    stroke="#8f6815"
+    stroke-width="6"
+    stroke-linejoin="round"
+    filter="url(#shadow)"
+  />
+
+  <path
+    d="
+      M256 420
+
+      C298 374
+       349 351
+       418 345
+
+      L396 382
+
+      C343 387
+       301 403
+       256 445
+      Z
+    "
+    fill="url(#gold3d)"
+    stroke="#8f6815"
+    stroke-width="6"
+    stroke-linejoin="round"
+    filter="url(#shadow)"
+  />
+
+
+  <!-- =========================
+       BUKU LAPIS BAWAH
+  ========================== -->
+
+  <path
+    d="
+      M256 445
+
+      C211 412
+       158 397
+       104 398
+
+      L126 435
+
+      C177 435
+       218 451
+       256 482
+      Z
+    "
+    fill="url(#tosca3d)"
+    stroke="#033e39"
+    stroke-width="6"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="
+      M256 445
+
+      C301 412
+       354 397
+       408 398
+
+      L386 435
+
+      C335 435
+       294 451
+       256 482
+      Z
+    "
+    fill="url(#tosca3d)"
+    stroke="#033e39"
+    stroke-width="6"
+    stroke-linejoin="round"
+  />
+
+
+  <!-- GARIS TENGAH BUKU -->
+
+  <path
+    d="M256 420 L256 480"
+    fill="none"
+    stroke="#e2c875"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+</svg>

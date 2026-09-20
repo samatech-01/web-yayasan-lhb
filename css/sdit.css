@@ -3,6 +3,28 @@
    PAGE STYLE
 ===================================================== */
 
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brand-name {
+  color: var(--tosca-dark);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.brand-parent {
+  margin-top: 4px;
+  color: var(--gold);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
 
 /* =========================
    HERO SDIT
@@ -1057,7 +1079,42 @@
   line-height: 1.7;
 }
 
+/* =========================
+   ICON OUTPUT LULUSAN
+========================= */
 
+.graduate-icon {
+  display: grid;
+  place-items: center;
+
+  width: 56px;
+  height: 56px;
+
+  margin-bottom: 18px;
+
+  background: var(--tosca-light);
+  border: 1px solid rgba(8, 127, 115, 0.12);
+
+  border-radius: 16px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.graduate-icon img {
+  display: block;
+
+  width: 32px;
+  height: 32px;
+
+  object-fit: contain;
+}
+
+.graduate-card:hover .graduate-icon {
+  transform: translateY(-3px);
+  background: rgba(200, 162, 74, 0.12);
+}
 
 /* =========================
    NILAI SEKOLAH
@@ -1202,6 +1259,258 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+}
+
+/* =========================
+   KONTAK SDIT
+========================= */
+
+.contact-section {
+  padding: 100px 0;
+  background: white;
+  border-top: 1px solid var(--border);
+}
+
+
+/* AREA KONTAK */
+
+.contact-grid {
+  display: block;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+/* =========================
+   CARD KONTAK
+========================= */
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  min-width: 0;
+  padding: 18px;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(4, 94, 86, 0.08);
+}
+
+
+/* ICON */
+
+.contact-icon {
+  display: grid;
+  place-items: center;
+
+  flex: 0 0 48px;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+}
+
+.contact-icon img {
+  display: block;
+
+  width: 26px;
+  height: 26px;
+
+  object-fit: contain;
+}
+
+
+/* TEXT */
+
+.contact-text {
+  min-width: 0;
+}
+
+.contact-label {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.contact-text h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  line-height: 1.3;
+
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.contact-text p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 12px;
+  line-height: 1.5;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   EMAIL
+========================= */
+
+.contact-email {
+  background: #fff7f7;
+  border-color: #f1d4d4;
+}
+
+.contact-email .contact-icon {
+  background: #fde2e2;
+}
+
+.contact-email .contact-label,
+.contact-email h3 {
+  color: #c62828;
+}
+
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.contact-whatsapp {
+  background: #f3fcf6;
+  border-color: #ccebd6;
+}
+
+.contact-whatsapp .contact-icon {
+  background: #d9f7e3;
+}
+
+.contact-whatsapp .contact-label,
+.contact-whatsapp h3 {
+  color: #128c4a;
+}
+
+
+/* =========================
+   FACEBOOK
+========================= */
+
+.contact-facebook {
+  background: #f4f8ff;
+  border-color: #d2e1fa;
+}
+
+.contact-facebook .contact-icon {
+  background: #deebff;
+}
+
+.contact-facebook .contact-label,
+.contact-facebook h3 {
+  color: #1877f2;
+}
+
+
+/* =========================
+   INSTAGRAM
+========================= */
+
+.contact-instagram {
+  background: #fff5fa;
+  border-color: #f1d3e2;
+}
+
+.contact-instagram .contact-icon {
+  background: #fce1ee;
+}
+
+.contact-instagram .contact-label,
+.contact-instagram h3 {
+  color: #c13584;
+}
+
+
+/* ALAMAT MOBILE */
+
+.contact-address {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  width: 100%;
+  margin-top: 8px;
+  padding: 20px;
+
+  background: var(--cream);
+
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 14px;
+}
+
+
+/* ICON LOCATION */
+
+.contact-address-icon {
+  display: grid;
+  place-items: center;
+
+  flex: 0 0 48px;
+
+  width: 48px;
+  height: 48px;
+
+  background: rgba(200, 162, 74, 0.12);
+
+  border-radius: 50%;
+}
+
+.contact-address-icon img {
+  display: block;
+
+  width: 26px;
+  height: 26px;
+
+  min-width: 26px;
+  min-height: 26px;
+
+  object-fit: contain;
+}
+
+
+/* TEXT ALAMAT */
+
+.contact-address-text {
+  flex: 1;
+  min-width: 0;
 }
 
 
@@ -1363,18 +1672,36 @@
   white-space: nowrap;
 }
 
-/* QURMA MOBILE */
+/* QURMA MOBILE - HORIZONTAL SCROLL */
 
 .qurma-grid {
-  grid-template-columns: 1fr;
-  gap: 22px;
+  display: flex;
+  gap: 16px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  padding: 4px 18px 20px;
+
+  scrollbar-width: none;
+}
+
+.qurma-grid::-webkit-scrollbar {
+  display: none;
 }
 
 .qurma-card {
-  width: 100%;
-  min-width: 0;
+  flex: 0 0 85%;
+  width: 85%;
+  min-width: 85%;
+
   padding: 0 28px 30px;
   overflow: hidden;
+
+  scroll-snap-align: start;
 }
 
 .qurma-image {
@@ -1488,4 +1815,275 @@
   width: 48px;
   height: 48px;
   object-fit: contain;
+}
+/* =================================
+   QURMA HORIZONTAL SCROLL
+   HP & TABLET
+================================= */
+
+@media (max-width: 850px) {
+
+  .qurma-grid {
+    display: flex;
+    grid-template-columns: none;
+
+    gap: 16px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 18px;
+
+    -webkit-overflow-scrolling: touch;
+
+    padding: 8px 18px 24px;
+
+    scrollbar-width: none;
+  }
+
+  .qurma-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .qurma-card {
+    flex: 0 0 82%;
+    width: 82%;
+    min-width: 82%;
+
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+    box-shadow: 0 10px 28px rgba(4, 94, 86, 0.08);
+  }
+
+}
+/* =========================================
+   HORIZONTAL CARD - HP & TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+  /* CONTAINER CARD */
+  .feature-grid,
+  .example-grid,
+  .system-grid,
+  .mission-grid,
+  .graduate-grid {
+    display: flex;
+
+    gap: 16px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 18px;
+
+    -webkit-overflow-scrolling: touch;
+
+    padding: 8px 18px 24px;
+
+    scrollbar-width: none;
+  }
+
+
+  /* SEMBUNYIKAN SCROLLBAR */
+  .feature-grid::-webkit-scrollbar,
+  .example-grid::-webkit-scrollbar,
+  .system-grid::-webkit-scrollbar,
+  .mission-grid::-webkit-scrollbar,
+  .graduate-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  /* UKURAN CARD */
+  .feature-card,
+  .example-item,
+  .system-card,
+  .mission-card,
+  .graduate-card {
+    flex: 0 0 82%;
+    width: 82%;
+    min-width: 82%;
+
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+
+  /* CARD TERANG */
+  .feature-card,
+  .system-card,
+  .mission-card,
+  .graduate-card {
+    box-shadow: 0 10px 28px rgba(4, 94, 86, 0.08);
+  }
+
+  /* =========================
+   ICON OUTPUT LULUSAN
+========================= */
+
+.graduate-icon {
+  display: grid;
+  place-items: center;
+
+  width: 56px;
+  height: 56px;
+
+  margin-bottom: 18px;
+
+  background: var(--tosca-light);
+  border: 1px solid rgba(8, 127, 115, 0.12);
+
+  border-radius: 16px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.graduate-icon img {
+  display: block;
+
+  width: 32px;
+  height: 32px;
+
+  object-fit: contain;
+}
+
+.graduate-card:hover .graduate-icon {
+  transform: translateY(-3px);
+  background: rgba(200, 162, 74, 0.12);
+}
+
+
+/* =================================
+   KONTAK HP & TABLET
+================================= */
+
+@media (max-width: 850px) {
+
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .contact-grid {
+    display: block;
+  }
+
+
+  /* =========================
+     EMAIL, WA, FB, IG - SWIPE
+  ========================= */
+
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    padding: 5px 0 18px;
+
+    scrollbar-width: none;
+  }
+
+  .contact-info::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  /* CARD KONTAK */
+
+  .contact-item {
+    flex: 0 0 240px;
+
+    width: 240px;
+    min-width: 240px;
+
+    padding: 18px;
+
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .contact-item h3 {
+    font-size: 15px;
+  }
+
+  .contact-item p {
+    font-size: 12px;
+  }
+
+
+  /* =========================
+     ALAMAT
+  ========================= */
+
+  .contact-address {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+    margin-top: 8px;
+    padding: 20px;
+  }
+
+
+  /* ICON LOCATION */
+
+  .contact-address-icon {
+    display: grid;
+    place-items: center;
+
+    flex: 0 0 48px;
+
+    width: 48px;
+    height: 48px;
+
+    background: rgba(200, 162, 74, 0.12);
+
+    border-radius: 50%;
+  }
+
+  .contact-address-icon img {
+    display: block;
+
+    width: 26px;
+    height: 26px;
+
+    padding: 0;
+    margin: 0;
+
+    object-fit: contain;
+  }
+
+
+  /* TEXT ALAMAT */
+
+  .contact-address-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .contact-address h3 {
+    font-size: 16px;
+  }
+
+  .contact-address p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .map-link {
+    font-size: 12px;
+  }
+
 }

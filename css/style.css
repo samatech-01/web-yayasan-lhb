@@ -145,8 +145,8 @@ img {
 
 .logo {
 
-  width: 56px;
-  height: 56px;
+  width: 66px;
+  height: 66px;
 
   flex-shrink: 0;
 
@@ -160,23 +160,54 @@ img {
 
 
 .logo img {
-
   width: 100%;
   height: 100%;
-
   object-fit: contain;
 
+  filter:
+    drop-shadow(0 2px 1px rgba(255, 255, 255, 0.35))
+    drop-shadow(0 4px 3px rgba(3, 62, 57, 0.22))
+    drop-shadow(0 9px 9px rgba(3, 62, 57, 0.18));
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.brand:hover .logo img {
+  transform: translateY(-2px) scale(1.04);
+
+  filter:
+    drop-shadow(0 2px 1px rgba(255, 255, 255, 0.4))
+    drop-shadow(0 5px 4px rgba(3, 62, 57, 0.25))
+    drop-shadow(0 12px 12px rgba(3, 62, 57, 0.22));
 }
 
 
 .brand-name {
-
   color: var(--tosca-dark);
-
+  font-size: 16px;
   font-weight: 700;
-
+  letter-spacing: 0.2px;
   line-height: 1.25;
 
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8),
+    0 3px 3px rgba(3, 62, 57, 0.16),
+    0 6px 8px rgba(3, 62, 57, 0.10);
+
+  transition:
+    transform 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.brand:hover .brand-name {
+  transform: translateY(-2px);
+
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9),
+    0 4px 4px rgba(3, 62, 57, 0.18),
+    0 8px 10px rgba(3, 62, 57, 0.14);
 }
 
 
@@ -510,6 +541,53 @@ img {
 
   font-size: 13px;
 
+}
+
+.footer-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-foundation {
+  margin-top: 3px;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.footer-tagline {
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 11px;
+}
+
+.footer-location {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
+.footer-location span {
+  margin: 0 5px;
+  color: var(--gold);
+}
+
+.footer-brand img {
+  filter:
+    drop-shadow(0 4px 3px rgba(0, 0, 0, .25))
+    drop-shadow(0 9px 10px rgba(0, 0, 0, .22));
+
+  transition:
+    transform .3s ease,
+    filter .3s ease;
+}
+
+.footer-brand:hover img {
+  transform: translateY(-3px) scale(1.04);
+
+  filter:
+    drop-shadow(0 5px 4px rgba(0, 0, 0, .30))
+    drop-shadow(0 12px 14px rgba(0, 0, 0, .28));
 }
 
 

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+
+  <!-- kepala tengah -->
+  <circle cx="32" cy="21" r="7"
+          stroke="#e2c875"
+          stroke-width="4"/>
+
+  <!-- kepala kiri kanan -->
+  <circle cx="16" cy="27" r="5"
+          stroke="#ffffff"
+          stroke-width="3.5"/>
+
+  <circle cx="48" cy="27" r="5"
+          stroke="#ffffff"
+          stroke-width="3.5"/>
+
+  <!-- badan tengah -->
+  <path d="M20 51V46C20 38 25 33 32 33C39 33 44 38 44 46V51"
+        stroke="#ffffff"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+  <!-- badan kiri -->
+  <path d="M7 49V45C7 39 11 35 17 35C19 35 21 36 23 37"
+        stroke="#e2c875"
+        stroke-width="3.5"
+        stroke-linecap="round"/>
+
+  <!-- badan kanan -->
+  <path d="M57 49V45C57 39 53 35 47 35C45 35 43 36 41 37"
+        stroke="#e2c875"
+        stroke-width="3.5"
+        stroke-linecap="round"/>
+
+</svg>
